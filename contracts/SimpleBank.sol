@@ -56,7 +56,8 @@ contract SimpleBank {
       // 1. A SPECIAL KEYWORD prevents function from editing state variables;
       //    allows function to run locally/off blockchain
       // 2. Get the balance of the sender of this transaction
-    }
+     return balances[msg.sender];
+     }
 
     /// @notice Enroll a customer with the bank
     /// @return The users enrolled status
